@@ -231,12 +231,12 @@ public class RPN {
 					double peekedValue = rpnStack.peek();
 					txtResult.setText(String.valueOf(peekedValue));
 					
-					for(int i=0; i < rpnStack.length; i++) { 
+				//	for(int i=0; i < rpnStack.length; i++) { 
 						//ltxtStack0[i+1] = stack[i];
 					}
 					
 					
-				}
+				
 				// This will catch any attempt by the user to enter
 				// a value that is not a number
 				catch (NumberFormatException nfe) {
@@ -363,7 +363,7 @@ public class RPN {
 		txtStack0.setBounds(683, 102, 63, 20);
 		frameMain.getContentPane().add(txtStack0);
 		txtStack0.setColumns(10);
-		txtStack0.setText(""+ stack0 +"");
+		//txtStack0.setText(""+ stack0 +"");
 		
 		txtStack1 = new JTextField();
 		txtStack1.setEditable(false);
@@ -421,9 +421,9 @@ public class RPN {
 		
 		
 	}
-	private void showStack(){
-		double peekedValue = rpnStack.peek(0);
+	//private void showStack(){
+	//	double peekedValue = rpnStack.peek(0);
 		// Show the result
-		txtResult.setText(String.valueOf(peekedValue));
-	}
+	//	txtResult.setText(String.valueOf(peekedValue));
+	//}
 }
